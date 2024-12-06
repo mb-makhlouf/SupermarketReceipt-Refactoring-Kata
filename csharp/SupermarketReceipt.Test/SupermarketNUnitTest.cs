@@ -10,7 +10,7 @@ namespace SupermarketReceipt.Test
         public void TenPercentDiscount()
         {
             // ARRANGE
-            SupermarketCatalog catalog = new FakeCatalog();
+            var catalog = new SimpleCatalog();
             var toothbrush = new Product("toothbrush", ProductUnit.Each);
             catalog.AddProduct(toothbrush, 0.99);
             var apples = new Product("apples", ProductUnit.Kilo);
